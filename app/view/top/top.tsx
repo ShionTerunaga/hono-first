@@ -1,4 +1,4 @@
-import Counter from "../../islands/counter"
+import { RoutingButton } from "../../islands/routingButton"
 import styles from "./style.css"
 
 interface props {
@@ -8,8 +8,8 @@ interface props {
 export const Top = (props: props) => {
     return (
         <div class={styles.container}>
-            <h1>Hello, {props.name}!</h1>
-            <Counter />
+            <h1>{props.name}!</h1>
+            <RoutingButton />
         </div>
     )
 }
